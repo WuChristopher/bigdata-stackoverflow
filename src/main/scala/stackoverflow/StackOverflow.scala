@@ -282,6 +282,11 @@ class StackOverflow extends Serializable {
     ((comp1 / count).toInt, (comp2 / count).toInt)
   }
 
+  /**
+    * There may be repeated points in the means array, so be careful not to transform the means to
+    * a map, which will eliminate the repeated ones. Also keep in mind that if there are no points
+    * assigned to a centroid, attach Nil to that centroid.
+    */
   def classify(means: Array[(Int, Int)], vectors: RDD[(Int, Int)]): Array[((Int, Int), Iterable[(Int, Int)])] = {
     val grouped =
       vectors.map(p => findClosest(p, means) -> p).groupByKey().sortByKey().collect().toMap
@@ -291,6 +296,9 @@ class StackOverflow extends Serializable {
     } yield means(i) -> value
   }
 
+  /**
+    * There may not be any point assigned to some centroid.
+    */
   def update(classified: Array[((Int, Int), Iterable[(Int, Int)])]): Array[(Int, Int)] = {
     classified.map(p => if (p._2 == Nil) p._1 else averageVectors(p._2))
   }
