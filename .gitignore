@@ -1,1 +1,12 @@
-.csv
+*.csv
+.DS_Store
+.idea/dbnavigator.xml
+.idea/inspectionProfiles/
+.idea/workspace.xml
+project/project/
+project/target/
+src/.DS_Store
+src/main/.DS_Store
+src/main/resources/
+src/main/scala/.DS_Store
+target/
