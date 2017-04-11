@@ -10,3 +10,4 @@ src/main/.DS_Store
 src/main/resources/
 src/main/scala/.DS_Store
 target/
+.idea/scala_settings.xml
