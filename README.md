@@ -1,7 +1,7 @@
 # [bigdata-stackoverflow](https://www.coursera.org/learn/scala-spark-big-data/programming/FWGnz/stackoverflow-2-week-long-assignment)
 To start, first download the assignment: [stackoverflow.zip](http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.zip). For this assignment, you also need to download the data (170 MB):
 
-[http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.csv](http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.csv)
+http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.csv
 
 and place it in the folder: 𝚜𝚛𝚌/𝚖𝚊𝚒𝚗/𝚛𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜/𝚜𝚝𝚊𝚌𝚔𝚘𝚟𝚎𝚛𝚏𝚕𝚘𝚠 in your project directory.
 
